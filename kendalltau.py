@@ -1,13 +1,13 @@
-def kendall_tau(rank1, rank2):
+def kendall_tau(perm1, perm2):
     """
     Compute the Kendall Tau distance between two rankings of the numbers
     from 0 to N-1
 
     Parameters
     ----------
-    rank1: list
+    perm1: list
         A permutation of the elements 0, 1, ..., N-1
-    rank2:
+    perm2:
         A permutation of the elements 0, 1, ..., N-1
     
     Returns
@@ -19,6 +19,6 @@ def kendall_tau(rank1, rank2):
     return 0
 
 # This example should have 7 discordant pairs
-rank1 = [0, 4, 3, 1, 2]
-rank2 = [1, 4, 2, 3, 0]
-print(kendall_tau(rank1, rank2))
+perm1 = [0, 4, 3, 1, 2]
+perm2 = [1, 4, 2, 3, 0]
+print(kendall_tau(perm1, perm2))
